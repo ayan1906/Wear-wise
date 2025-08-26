@@ -1,0 +1,334 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #dce1e7;
+}
+
+.header1 {
+    justify-content: space-between;
+    display: flex;
+    height: 80px;
+    background-color: white;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Logo */
+.logo {
+    width: 100px;
+    height: 80px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Search Bar */
+.search-option {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    width: 500px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 5px 10px;
+    background: white;
+    transition: border-color 0.25s ease-in-out;
+}
+
+.search-option:hover {
+    border-color: red;
+}
+
+.search-option input {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #666;
+}
+
+/* Login */
+.login {
+    width: 50px;
+    height: 40px;
+}
+
+.login a i {
+    margin-top: 3px;
+    margin-left: 200px;
+    color: black;
+    font-size: 34px;
+    transition: 0.25s ease-in-out;
+}
+
+.login a i:hover {
+    color: aqua;
+}
+
+/* Cart Button */
+.btn-cart {
+    width: 50px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: transparent;
+    position: relative;
+}
+
+.btn-cart::after {
+    content: attr(data-quantity);
+    position: absolute;
+    font-size: 16px;
+    color: #2370F4;
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    transition: .2s linear;
+    top: 115%;
+}
+
+.icon-cart {
+    transition: .2s linear;
+}
+
+.icon-cart path {
+    fill: rgb(240, 8, 8);
+    transition: .2s linear;
+}
+
+.btn-cart:hover .icon-cart {
+    transform: scale(1.2);
+}
+
+.btn-cart:hover > .icon-cart path {
+    fill: rgb(186, 34, 233);
+}
+
+.btn-cart:hover::after {
+    visibility: visible;
+    opacity: 1;
+}
+
+.quantity {
+    display: none;
+}
+
+/* Navbar Styling */
+.navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    gap: 15px;
+    position: relative;
+}
+
+/* Navbar Items */
+.navitem {
+    color: white;
+    position: relative;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+/* Navbar Hover Effect */
+.navitem::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #f0f0f0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+.navitem:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Dropdown Menu */
+.dropdown1 {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    min-width: 200px;
+    white-space: nowrap;
+    max-width: 90vw; /* Ensures dropdown doesn't exceed 90% of viewport width */
+    overflow-x: auto; /* Enables horizontal scrolling if needed */
+}
+
+/* Ensure Dropdown Stays Within Page */
+.navbar {
+    position: relative;
+}
+
+.navitem .dropdown1 {
+    left: 0;
+    right: auto;
+}
+
+/* If Dropdown is Near Right Edge, Align It Correctly */
+.navitem:last-child .dropdown1,
+.navitem:nth-last-child(2) .dropdown1 { /* Adjust for last two items */
+    left: auto;
+    right: 0;
+}
+
+/* Show Dropdown on Hover */
+.navitem:hover .dropdown1 {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Dropdown Columns */
+.dropdown-coloum {
+    padding: 10px;
+    width: 200px;
+}
+
+.dropdown-coloum h4 {
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.dropdown-coloum a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 5px;
+    transition: 0.25s ease-in-out;
+}
+
+.dropdown-coloum a:hover {
+    color: white;
+    background-color: #DD3333;
+    border-radius: 8px;
+    padding: 8px 5px;
+}
+
+/* offer header */
+
+.offer-header{
+    margin: 20px ;
+}
+
+.offer-header img {
+    margin-top: 30px;
+    margin-left: 400px;
+}
+
+/* card design */
+
+.card-section{
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+
+.cloth-card {
+    width: 330px;
+    padding: 15px;
+    border: 1px transparent;
+    text-align: center;
+}
+
+.cloth-card a{
+    color: black;
+    text-decoration: none;
+    
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.image-container img {
+    height: 350px;
+    width: 300px;
+    display: block;
+}
+
+.quick-view {
+    position: absolute;
+    bottom: -50px; /* লুকানো অবস্থান */
+    left: 0;
+    width: 100%;
+    background: #DD3333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    transition: bottom 0.3s ease-in-out;
+}
+
+.cloth-card:hover .quick-view {
+    bottom: 0; /* হোভার করলে উপরে উঠে আসবে */
+}
+
+.product-title{
+    margin-left: 10px;
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin-top: 5px;
+    color: black;
+    margin-bottom: 5px;
+    transition: 0.1s ease-in-out;
+}
+
+.product-title:hover{
+    color: #DD3333;
+}
+
+.price{
+    margin-left: 10px;
+    text-align: left;
+}
+
+.price del{
+    color: grey;
+
+}
+
+.price span{
+    color: #DD3333;
+}
