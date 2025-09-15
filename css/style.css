@@ -71,6 +71,7 @@ body {
 }
 
 .login a i {
+    margin-left:200px
     margin-top: 3px;
     color: black;
     font-size: 34px;
@@ -409,3 +410,4 @@ body {
     .social-media i :hover{
         color: cyan;
     }
+
