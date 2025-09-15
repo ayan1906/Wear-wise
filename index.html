@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WearCraft</title>
+    <link rel="icon" type="image/png" href="">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="header1">
+<!-- LOGO -->
+        <div class="logo">
+            <a href="index.html">
+                    <img src="./images/logo image.jpg" alt="">
+            </a>
+        </div>
+<!-- Search -->
+        <div class="search-option">
+            <input type="text" placeholder="Search Product"> 
+            <button class="search-button">🔍</button>
+        </div>
+
+<!-- Login -->
+        <div class="login">
+            <a href="login.html"><i class='bx bx-log-in'></i></a>
+        </div>
+<!-- CART -->
+        <div class="button">
+            <button data-quantity="0" class="btn-cart">
+
+                <svg class="icon-cart" viewBox="0 0 24.38 30.52" height="30.52" width="24.38"
+                    xmlns="http://www.w3.org/2000/svg">
+
+                    <path transform="translate(-3.62 -0.85)"
+                        d="M28,27.3,26.24,7.51a.75.75,0,0,0-.76-.69h-3.7a6,6,0,0,0-12,0H6.13a.76.76,0,0,0-.76.69L3.62,27.3v.07a4.29,4.29,0,0,0,4.52,4H23.48a4.29,4.29,0,0,0,4.52-4ZM15.81,2.37a4.47,4.47,0,0,1,4.46,4.45H11.35a4.47,4.47,0,0,1,4.46-4.45Zm7.67,27.48H8.13a2.79,2.79,0,0,1-3-2.45L6.83,8.34h3V11a.76.76,0,0,0,1.52,0V8.34h8.92V11a.76.76,0,0,0,1.52,0V8.34h3L26.48,27.4a2.79,2.79,0,0,1-3,2.44Zm0,0">
+                    </path>
+                </svg>
+                <span class="quantity"></span>
+            </button>
+            </a>
+
+        </div>
+
+    </div>
+
+<!-- navbar start -->
+
+    <div class="navbar">
+        <div class="navitem">HOME
+            <div class="dropdown1">
+                <div class="dropdown-coloum">
+                    <a href="index.html">Home</a>
+                    <a href="">New Arrivals</a>
+                    <a href="">Popular Products</a>
+                    <a href="">Special Offers</a>
+                    <a href="">About Us</a>
+                    <a href="">Contact us</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="navitem">MEN
+            <div class="dropdown1">
+                <div class="dropdown-coloum">
+                    <h4>Clothing</h4>
+                    <a href="menclothingshirt.html">Shirts</a>
+                    <a href="menclothingtshirt.html">T-Shirts</a>
+                    <a href="menclothingpanjabi.html">panjabi</a>
+                    <a href="menclothingpant.html">Pant</a>
+                    <a href="menclothingsjoggers.html">Joggers</a>
+                    <a href="menclothingpoloShirts.html">Polo Shirts</a>
+                    <a href="menclothingjackets.html">Jackets</a>
+                    <a href="menclothingsleapwear.html">Sleepwear</a>
+                </div>
+
+                <div class="dropdown-coloum">
+                    <h4>Accessories</h4>
+                    <a href="menaccesoriesbelts.html2">Belts</a>
+                    <a href="menaccesorieswatch.html">Watches</a>
+                    <a href="menaccesorieswallet.html">Wallets</a>
+                    <a href="menaccesorieshat.html">Hats</a>
+                    <a href="menaccesoriesperfume.html">Perfumes</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="navitem">WOMEN
+            <div class="dropdown1">
+                <div class="dropdown-coloum">
+                    <h4>Clothing</h4>
+                    <a href="">Sarees</a>
+                    <a href="">Salwar Kameez</a>
+                    <a href="">Kurtis & Tops</a>
+                    <a href="">Western Wear</a>
+                    <a href="">Leggings</a>
+                    <a href="">Sleepwear</a>
+                    <a href="">Winter Wear</a>
+                </div>
+
+                <div class="dropdown-coloum">
+                    <h4>Accessories</h4>
+                    <a href="">Jewellery</a>
+                    <a href="">Bags & purses</a>
+                    <a href="">Scarves & Stoles</a>
+                    <a href="">Perfumes</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="navitem">KIDS
+            <div class="dropdown1">
+                <div class="dropdown-coloum">
+                    <h4>Boy's Clothing</h4>
+                    <a href="">Shirts</a>
+                    <a href="">T-Shirts</a>
+                    <a href="">panjabi</a>
+                    <a href="">Pant</a>
+                    <a href="">Jackets</a>
+                    <a href="">Sleapwear</a>
+                </div>
+
+
+                <div class="dropdown-coloum">
+                    <h4>Girl's Clothing</h4>
+                    <a href="">Frocks & Dresses</a>
+                    <a href="">Tops & T-Shirts</a>
+                    <a href="">Leggings & Trousers</a>
+                    <a href="">Salwar Kameez</a>
+                    <a href="">Jackets</a>
+                    <a href="">Sleapwear</a>
+                </div>
+
+
+                <div class="dropdown-coloum">
+                    <h4>Accessories</h4>
+                    <a href="">Shoes</a>
+                    <a href="">Sunglasses</a>
+                    <a href="">Watches</a>
+                    <a href="">Hats</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="navitem">BABY
+            <div class="dropdown1">
+                <div class="dropdown-coloum">
+                    <a href="">Bodysuits</a>
+                    <a href="">T-Shirts & Tops</a>
+                    <a href="">Pants</a>
+                    <a href="">Sleepwear</a>
+                    <a href="">Socks & Hats</a>
+                    <a href="">Blanket & Towels</a>
+                    <a href="">Toys</a>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="navitem">COMBO T-SHIRT
+            <div class="dropdown1">
+                <div class="dropdown-coloum">
+                    <a href="">Men's Combos</a>
+                    <a href="">Women's Combos</a>
+                    <a href="">Couple Combos</a>
+                    <a href="">Family Combos</a>
+                    <a href="">Theme-Based Combos</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="navitem">COSMETICS
+            <div class="dropdown1">
+                <div class="dropdown-coloum">
+                    <h4>Skin Care</h4>
+                    <a href="">Face Wash</a>
+                    <a href="">Toner</a>
+                    <a href="">Moisturizer</a>
+                    <a href="">Serum</a>
+                    <a href="">Sunscreen</a>
+                    <a href="">Masks</a>
+                    <a href="">Scrubs</a>
+                </div>
+
+                <div class="dropdown-coloum">
+                    <h4>Makeup</h4>
+                    <a href="">Foundation</a>
+                    <a href="">Concealer</a>
+                    <a href="">Powder</a>
+                    <a href="">Eyeshadow</a>
+                    <a href="">Eyeliner</a>
+                    <a href="">Mascara</a>
+                    <a href="">Lipstick</a>
+                    <a href="">Lip Gloss</a>
+                    <a href="">Brushes & sponges</a>
+                </div>
+                <div class="dropdown-coloum">
+                    <h4>Hair Care</h4>
+                    <a href="">Shampoo</a>
+                    <a href="">Conditioner</a>
+                    <a href="">Hair Oil</a>
+                    <a href="">Hair Mask</a>
+                    <a href="">Hair Spray</a>
+                </div>
+
+                <div class="dropdown-coloum">
+                    <h4>Body care</h4>
+                    <a href="">Body Wash</a>
+                    <a href="">Lotion</a>
+                    <a href="">Soap</a>
+                </div>
+
+                <div class="dropdown-coloum">
+                    <h4>Fragrance</h4>
+                    <a href="">Perfume</a>
+                    <a href="">Deodorant</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="navitem">GIFTS</div>
+    </div>
+<!-- Navbar End -->
+<!-- slide start -->
+<div class="slider-container">
+    <div class="slides">
+        <div class="slide"><img src="./images/slide 1.jpg" alt="Ramadan Sale 1"></div>
+        <div class="slide"><img src="./images/slide2.png" alt="Ramadan Sale 2"></div>
+        <div class="slide"><img src="./images/slide 5.jpg" alt="Ramadan Sale 3"></div>
+    </div>
+</div>
+
+<!-- Offer menu start -->
+
+<div class="offer-menu">
+    <a href="womenofferttopbottom.html"><img src="./images/offer 1.jpg" alt="tshirt leggings"></a>
+    <a href="combotshirt.html"><img src="./images/offer 2.png" alt="Combo Shirt"></a>
+    <a href=""><img src="./images/offer 3.jpg" alt="Three piece"></a>
+
+</div>
+
+<!-- Top categories Start -->
+<div class="divider">
+    <hr>
+    <span>TOP CATEGORIES</span>
+    <hr>
+</div>
+
+
+
+
+<div class="card-section">
+    <a href="shirts.html">
+        <div class="card">
+        <img src="./images/topc/1.webp" alt="Shirts">
+        <div class="card-title">Shirts</div>
+        </div>
+    </a>
+
+    <a href="panjabi.html">
+        <div class="card">
+        <img src="./images/topc/2.webp" alt="Panjabi">
+        <div class="card-title">Panjabi</div>
+        </div>
+    </a>
+
+    <a href="fashion-tops.html">
+        <div class="card">
+        <img src="./images/topc/3.webp" alt="Fashion Tops">
+        <div class="card-title">Fashion Tops</div>
+        </div>
+    </a>
+
+    <a href="exclusive-lawn.html">
+        <div class="card">
+        <img src="./images/topc/4.webp" alt="Exclusive Lawn">
+        <div class="card-title">Exclusive Lawn</div>
+        </div>
+    </a>
+    </div>
+
+    <!-- Top categories End -->
+
+    <!-- Women products -->
+
+    <div class="divider">
+        <hr>
+        <span>WOMEN PRODUCTS</span>
+        <hr>
+    </div>
+
+    
+    <div class="card-section">
+        <a href="">
+            <div class="card">
+            <img src="./images/women categgory/1.webp" alt="Shirts">
+            <div class="card-title">Sarees</div>
+            </div>
+        </a>
+    
+        <a href="">
+            <div class="card">
+            <img src="./images/women categgory/2.jpg" alt="Panjabi">
+            <div class="card-title">Salwar Kameez</div>
+            </div>
+        </a>
+    
+        <a href="">
+            <div class="card">
+            <img src="./images/women categgory/3.webp" alt="Fashion Tops">
+            <div class="card-title"> Western Wear</div>
+            </div>
+        </a>
+    
+        <a href="">
+            <div class="card">
+            <img src="./images/women categgory/4.webp" alt="Exclusive Lawn">
+            <div class="card-title">Jewellery</div>
+            </div>
+        </a>
+        </div>
+    
+
+<!-- Popular Products -->
+
+<div class="divider">
+    <hr>
+    <span>POPULAR PRODUCTS</span>
+    <hr>
+</div>
+
+<div class="card-section">
+    <a href="">
+        <div class="card">
+        <img src="./images/topc/2.webp" alt="Shirts">
+        <div class="card-title">Panjabi</div>
+        </div>
+    </a>
+
+    <a href="">
+        <div class="card">
+        <img src="./images/topc/1.webp" alt="Panjabi">
+        <div class="card-title">Shirt</div>
+        </div>
+    </a>
+
+    <a href="">
+        <div class="card">
+        <img src="./images/women categgory/1.webp" alt="Fashion Tops">
+        <div class="card-title">Saree</div>
+        </div>
+    </a>
+
+    <a href="">
+        <div class="card">
+        <img src="./images/women categgory/2.jpg" alt="Exclusive Lawn">
+        <div class="card-title">Salwar Kameez</div>
+        </div>
+    </a>
+    </div>
+
+    <!-- desire product -->
+    <div class="divider">
+        <hr>
+        <span>SHOP ALL YOUR DESIRE PRODUCTS</span>
+        <hr>
+    </div>
+
+    
+    <div class="card-section">
+        <a href="">
+            <div class="card">
+            <img src="./images/desire product/1.jpg" alt="Shirts">
+            </div>
+        </a>
+    
+        <a href="">
+            <div class="card">
+            <img src="./images/desire product/2.jpg" alt="Panjabi">
+            </div>
+        </a>
+    
+        <a href="">
+            <div class="card">
+            <img src="./images/desire product/3.jpg" alt="Fashion Tops">
+            </div>
+        </a>
+    
+        <a href="">
+            <div class="card">
+            <img src="./images/desire product/4.jpg" alt="Exclusive Lawn">
+            </div>
+        </a>
+        </div>
+
+        <!-- Footer -->
+
+    <footer>
+        <div class="footer-body">
+
+            <div class="manza">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. At est quibusdam possimus asperiores architecto? Beatae, obcaecati perspiciatis laborum totam dolorum velit dolorem aliquam sed! Excepturi vitae laudantium quos corrupti ut molestiae dolorum dolorem, a quae magni autem hic dolores minima perferendis quisquam assumenda, eveniet temporibus nostrum quasi. Neque, quis dolorem?
+            </div>
+            <div class="customer-info">
+                <h3>Customer Info</h3>
+                <a href="">About us</a>
+                <a href="">Delivery & Rerurn policy</a>
+                <a href="">Privacy policy</a>
+                <a href="">Terms & Service</a>
+                <a href="">Contact us</a>
+
+
+            </div>
+
+            <div class="social-media">
+                <a href=""><i class='bx bxl-facebook-circle'>Facebook</i></a>
+                <a href=""><i class='bx bxl-instagram-alt'>Instagram</i></a>
+                <a href=""><i class='bx bxl-youtube' >Youtube</i></a>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+<!-- slide script start -->
+<script>
+    let index = 0;
+    function changeSlide() {
+        const slides = document.querySelector(".slides");
+        index = (index + 1) % 3; // মোট ৩টি স্লাইড
+        slides.style.transform = `translateX(-${index * 100}%)`;
+    }
+    setInterval(changeSlide, 4000); // 2 সেকেন্ড পর পর পরিবর্তন
+</script>
+<!-- slide script end -->
+</body>
+</html>
